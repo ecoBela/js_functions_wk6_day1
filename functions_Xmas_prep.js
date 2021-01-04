@@ -1,3 +1,13 @@
+function sumArray(numbers){
+    total = 0;
+    for(var number of numbers){
+        total += number;
+    }
+    return total;
+}
+
+var sum = sumArray([10,9, 1]);
+console.log('sum of array: ', sum);
 
 
 
