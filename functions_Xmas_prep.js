@@ -9,6 +9,26 @@ function sumArray(numbers){
 var sum = sumArray([10,9, 1]);
 console.log('sum of array: ', sum);
 
+var checkString = function(object, string){
+    for(var key in object){
+        if(string === key){
+            return true;
+        }
+    return false
+    }
+}
+
+var person = {
+    name: 'Wojtek',
+    age: 30
+};
+
+var keyIsFound = checkString(person, "name");
+var keyIsNotFound = checkString(person, "email");
+
+console.log("should be true ", keyIsFound);
+console.log("should be false ", keyIsNotFound);
+
 
 
 
